@@ -19,10 +19,38 @@
 
         <div class="form-and-image">
             <section class="form-container">
-                <textarea name="" id=""></textarea>
+                <textarea class="form-container_promt-input" rows="5" placeholder="Describe tu imagen"></textarea>
+                <div class="form-container_dropdown-group">
+                    <select class="form-container_style-select">
+                        <option value="" disabled selected>Selecciona un estilo</option>
+                        <option value="realista">Realista</option>
+                        <option value="acuarela">Acuarela</option>
+                        <option value="pixel-art">Pixel Art</option>
+                        <option value="boceto">Boceto</option>
+                    </select>
+
+                    <select class="form-container_size-select">
+                        <option value="" disabled selected>Selecciona un tamaño</option>
+                        <option value="256x256">256x256</option>
+                        <option value="512x512">512x512</option>
+                        <option value="1024x1024">1024x1024</option>
+                    </select>
+                </div>
+
+                <button class="form-container_generate-button">
+                    <i class="bx bx-brush" style="font-size: 22px; color: #333;"></i>
+                    Generar Imagen</button>
             </section>
 
-            <section class="image-container"></section>
+            <section class="image-container">
+                <img class="image-container_image_result" id="imageResult" src="ejemplo.jpeg" alt="">
+                <div class="image-container_layer">
+
+                </div>
+                <button class="image-container_buttom">
+                    <i class='bx bx-download'></i>
+                </button>
+            </section>
         </div>
     </main>
 
